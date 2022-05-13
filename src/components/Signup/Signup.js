@@ -42,10 +42,10 @@ const Signup = () => {
     return (
         <div className='form-container'>
             <div>
-                <h1 className='form-title'>Signup</h1>
+                <h1 className='form-title'>Sign up</h1>
                 <form onSubmit={handleCreateUser}>
                     <div className="input-group">
-                        <label htmlFor='email'> Email </label>
+                        <label htmlFor='email'>Email</label>
                         <input onBlur={handleEmailBlur} type="email" name="email" id="" required/>
                     </div>
                     <div className="input-group">
