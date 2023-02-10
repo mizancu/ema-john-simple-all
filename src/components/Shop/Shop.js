@@ -15,12 +15,13 @@ const Shop = () => {
 
     
     useEffect( () =>{
-        fetch(`http://localhost:5000/products?page=${page}&size=${size}`)
+        fetch(`http://localhost:5000/product?page=${page}&size=${size}`)
         .then(res => res.json())
         .then(data => setProducts(data));
     }, [page, size]);
     
-    
+    // ?page=${page}&size=${size}
+    // page, size
 
     useEffect(() => {
         fetch('http://localhost:5000/productCount')
